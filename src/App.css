@@ -1,38 +1,151 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.body {
   color: white;
+  text-align: left;
+  background-color: #282c34;
 }
 
-.App-link {
-  color: #61dafb;
+@media screen and (min-width: 1300px) {
+  .App {
+    display: flex;
+    margin: 3% 10%;
+    flex-direction: row;
+  }
+  
+  .profilePicCol {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    text-align: right;
+    float: right;
+  }
+  
+  .profilePic {
+    width: 100%
+  }
+  
+  a {
+    color: #61dafb;
+    text-decoration: none;
+  }
+  
+  .infoCol {
+    width: 70%;
+    margin: 0 5%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .title {
+    margin: 0;
+  }
+  
+  h1, h2, h3 {
+    color: #61dafb;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  .socialMediaLayout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem 0;
+  }
+  
+  .socialMedia {
+    height: 3rem;
+    width: 3rem;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (min-width: 10px) {
+  .body {
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .App {
+    display: flex;
+    margin: 3% 10%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
-}
+  
+  .profilePicCol {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .profilePic {
+    width: 100%
+  }
+  
+  a {
+    color: #61dafb;
+    text-decoration: none;
+  }
+  
+  .infoCol {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .container {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .title {
+    margin: 0;
+  }
+  
+  h1, h2, h3 {
+    color: #61dafb;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+  
+  .socialMediaLayout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem 0;
+  }
+  
+  .socialMedia {
+    margin-top: 1rem;
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .thanks {
+    display: none;
+  }
+} 
